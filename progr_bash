@@ -1,0 +1,55 @@
+#!/bin/bash
+
+#while true
+#do
+#	read -p "continuar? (s/n): " ans
+	
+#	if [ "$ans" == "s" ]
+#	then
+#	     break
+#	fi
+#done
+
+read -p "First number: " var1
+read -p "second number: " var2
+read -p "third number:  " var3
+#var1=5
+#var2=2
+
+while true
+do
+		if [ $var1 -eq $var2 ] && [ $var1 -eq $var3 ]
+		then
+			echo "Equilatero"
+			break
+		elif [ $var1 -eq $var2 ] || [ $var2 -eq $var3 ] || [ $var1 -eq $var3 ]
+		then 
+			r1 = expr var1 + var2
+			echo "$r"
+			echo "Isoceles"
+			break
+		else 
+			echo "Escaleno"
+			break
+		fi
+		 #if [ $var1 -eq $var2 ] || [ $var1 -eq $var3 ] || [ $var2 -eq $var3 ]
+		 #then
+		 #elif [ $var1 -eq $var3 ] || [ $var1 -eq 
+
+	#if [ $var1 -gt $var2 ]
+	#then 
+	#	echo " $var1 is greater than $var2"
+	#	break
+	#fi
+
+	#if [ $var1 -lt $var2 ]
+	#then
+	#	echo " $var1 is less than $var2"
+	#	break
+	#fi
+	#if [ $var1 -eq $var2 ]
+	#then
+	#	echo " $var1 is equal than $var2"
+	#	break
+	#fi
+done
